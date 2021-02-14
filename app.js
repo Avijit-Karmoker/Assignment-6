@@ -48,6 +48,12 @@ let errorMessage = error => {
         const spinner = document.getElementById('loading-spinner');
         spinner.classList.add('d-none');
     }
+    else{
+        const errorDiv = document.getElementById('error');
+        errorDiv.classList.add('d-none');
+        let off = document.getElementById('main-body');
+        off.classList.remove('d-none');
+    }
 }
 
 let slideIndex = 0;
